@@ -1,4 +1,3 @@
-
 /* @import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:400,700&display=swap'); */
 /* container */
 
@@ -583,12 +582,14 @@
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-	width: 100%;
+
 }
 
 .hipster__img {
 	margin: 70px auto;
+	width: 100%;
 }
+
 /* colage */
 .colage {
 	width: 100%;
@@ -606,11 +607,11 @@
 	text-align: center;
 }
 
-.colage__img--up{
+.colage__img--up {
 	margin-top: -3.9px;
 }
 
-.img__item{
+.img__item {
 	width: 100%;
 }
 
@@ -618,52 +619,41 @@
 /* johana */
 
 
-.johana__avatar{
+.johana__avatar {
 	background-image: url(../images/johana.png);
-	border:none;
+	border: none;
 	border-radius: 50%;
 	width: 210px;
 	height: 210px;
 }
 
 /* people */
-.people{
+.people {
 	background-image: url(../images/mounth.jpg);
 }
 
 /* client	 */
 
-.clients {
-
-}
+.clients {}
 
 .clients__wrap {
 	display: flex;
 	flex-wrap: wrap;
 }
 
-.clients__box{
+.clients__box {
 	width: 50%;
 
 }
 
-.clients__img {
+.clients__img {}
 
-}
+.clients__text {}
 
-.clients__text {
+.clients__name {}
 
-}
+.clients__service {}
 
-.clients__name {
+.client__desc {}
 
-}
-
-.clients__service {
-
-}
-
-.client__desc {
-
-}
 @import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:400,700&display=swap');
