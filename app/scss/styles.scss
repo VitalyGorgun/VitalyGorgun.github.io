@@ -8,11 +8,11 @@ html {
 
 .wrap {
 	margin: 0 auto;
-	text-align: center;
 }
 
 .catalogue-filtr {
 	display: inline;
+	font-size: 5.5vw;
 
 	&__item {
 		display: inline;
@@ -44,16 +44,12 @@ html {
 	&__item {}
 }
 
-
-// при зміні розміру картки змінити:
-// розмір фото,шрифту,
 .product-card {
-	width: 47%; //ширина картки товару
+	width: 96%; //ширина картки товару
+	padding: 2%;
+	margin: 2%;
+	border: 1px solid rgb(238, 238, 238);
 	display: inline-block;
-	margin: .5vw;
-	padding: 3vw;
-	border: 1px solid #e0dfde;
-
 
 	&__wrapper {
 		position: relative;
@@ -65,50 +61,63 @@ html {
 		position: absolute;
 		width: 100%;
 		height: 100%;
-		border-collapse: collapse;
-		font-size: 5vw;
+		font-size: 10vw;
 
 		.product-info {
 			color: red;
 
 			&__cost {
+				display: block;
+				color: #d60c0c;
 				font-size: 1em;
-				text-align: left;
-				height: 1%;
+				height: 12%;
 			}
 
 			&__sell {
+				color: #bdb9b5;
 				font-size: .705882352em;
-				text-align: left;
-				height: 6vw;
+				height: 5%;
+			}
+
+			&__img-box {
+				position: relative;
+				height: 55%;
+				width: 100%;
 			}
 
 			&__img {
-				height: 15vw;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				margin: 0 auto;
+				max-height: 100%;
+				max-width: 100%;
+				width: 100%;
+				object-fit: cover;
+				display: block;
 			}
 
 			&__sex {
-				padding-top: 5vw;
-				text-transform: uppercase;
 				font-weight: bold;
-				text-align: left;
+				color: #8a8784;
 				font-size: .6470588235294118em;
-				height: 2%;
+				text-transform: uppercase;
+				height: 8%;
 			}
 
 			&__desc {
-				padding-top: 2vw;
-				text-align: left;
+				display: block;
+				color: #8a8784;
 				font-size: .705882352em;
-				height: 2vw;
+				height: 15%;
 			}
 
 			&__id {
-				padding-top: 1vw;
-				text-align: left;
+				padding-top: auto;
 				color: #bdb9b5;
 				font-size: .5882352941176471em;
-				height: 1vw;
+				height: 5%;
 			}
 		}
 
@@ -134,21 +143,43 @@ html {
 /* Стили для маленьких экранов (телефоны в альбомной ориентации,
 дисплей 576 пикселей и более) */
 @media (min-width: 576px) {
+	.product-card {
+		width: 46%; //ширина картки товару
+		padding: 2%;
+		margin: 2%;
 
+		&__info {
+			font-size: 5vw;
+		}
+	}
 }
 
 /* Стили для средних экранов (планшеты, дисплей 768 пикселей и более) */
 @media (min-width: 768px) {
-	
- }
+	.product-card {
+		width: 31.3333%; //ширина картки товару
+		padding: 2%;
+		margin: 1%;
+
+		&__info {
+			font-size: 3.33333333333333vw;
+		}
+	}
+}
 
 /* Стили для больших экранов (ПК, дисплей 992 пикселей и более) */
 @media (min-width: 992px) {
-	
+	.product-card {
+		width: 24%; //ширина картки товару
+		padding: .5%;
+		margin: .5%;
+
+		&__info {
+			font-size: 2.2vw;
+		}
+	}
 }
 
 /* Стили для очень больших экранов (ПК с большим монитором,
 дисплей 1200 пикселей и более) */
-@media (min-width: 1200px) {
-	
-}
+@media (min-width: 1200px) {}
