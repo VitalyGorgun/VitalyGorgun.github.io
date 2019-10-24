@@ -1,0 +1,154 @@
+$main: #623232;
+$dark-brown: #472424;
+$orange: #ff7373;
+
+html {
+	color: #8a8784;
+}
+
+.wrap {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.catalogue-filtr {
+	display: inline;
+
+	&__item {
+		display: inline;
+		margin-right: 20px;
+	}
+
+	&__link {
+		color: #bdb9b5;
+		text-transform: uppercase;
+
+		&:hover {
+			color: $orange;
+		}
+
+		&--active {
+			color: $main;
+			font-weight: 900;
+
+			&:hover {
+				color: $main;
+			}
+		}
+	}
+}
+
+.product-grid {
+	font-size: 0;
+
+	&__item {}
+}
+
+
+// при зміні розміру картки змінити:
+// розмір фото,шрифту,
+.product-card {
+	width: 47%; //ширина картки товару
+	display: inline-block;
+	margin: .5vw;
+	padding: 3vw;
+	border: 1px solid #e0dfde;
+
+
+	&__wrapper {
+		position: relative;
+		width: 100%;
+		padding-bottom: 137.2549019607843%; //відношення висоти до ширини
+	}
+
+	&__info {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		border-collapse: collapse;
+		font-size: 5vw;
+
+		.product-info {
+			color: red;
+
+			&__cost {
+				font-size: 1em;
+				text-align: left;
+				height: 1%;
+			}
+
+			&__sell {
+				font-size: .705882352em;
+				text-align: left;
+				height: 6vw;
+			}
+
+			&__img {
+				height: 15vw;
+			}
+
+			&__sex {
+				padding-top: 5vw;
+				text-transform: uppercase;
+				font-weight: bold;
+				text-align: left;
+				font-size: .6470588235294118em;
+				height: 2%;
+			}
+
+			&__desc {
+				padding-top: 2vw;
+				text-align: left;
+				font-size: .705882352em;
+				height: 2vw;
+			}
+
+			&__id {
+				padding-top: 1vw;
+				text-align: left;
+				color: #bdb9b5;
+				font-size: .5882352941176471em;
+				height: 1vw;
+			}
+		}
+
+		//продукти со скидкой
+		&--sale {
+			.product-info__cost {
+				color: $orange;
+			}
+
+			.product-info__sell {
+				text-decoration: line-through;
+			}
+		}
+	}
+
+
+}
+
+
+
+
+
+/* Стили для маленьких экранов (телефоны в альбомной ориентации,
+дисплей 576 пикселей и более) */
+@media (min-width: 576px) {
+
+}
+
+/* Стили для средних экранов (планшеты, дисплей 768 пикселей и более) */
+@media (min-width: 768px) {
+	
+ }
+
+/* Стили для больших экранов (ПК, дисплей 992 пикселей и более) */
+@media (min-width: 992px) {
+	
+}
+
+/* Стили для очень больших экранов (ПК с большим монитором,
+дисплей 1200 пикселей и более) */
+@media (min-width: 1200px) {
+	
+}
