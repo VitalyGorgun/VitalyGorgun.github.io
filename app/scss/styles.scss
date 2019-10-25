@@ -1,22 +1,147 @@
-$main: #623232;
-$dark-brown: #472424;
-$orange: #ff7373;
+$a:#1a1a1a;
+$b:#2a2a2a;
+$c:#ff6766;
+$d:#606060;
+$e:#fffefd;
+$f:#747474;
+
 
 html {
-	color: #8a8784;
+	color: $d;
+	background-color: $a;
+
+	body {
+		margin-top: 60px;
+	}
+}
+
+.header-menu {
+	width: 100%;
+	height: 46px;
+	background-color: #2a2a2a;
+	// border-bottom: 1px solid $c;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+
+	&__nav-btn {
+		width: 62px;
+		height: 46px;
+		background-color: $c;
+	}
+}
+
+.menu {
+	height: 0;
+
+	#menu__toogle {
+		opacity: 0;
+
+		&:checked~.menu__btn .menu__btn-icon {
+			transform: rotate(45deg);
+		}
+
+		&:checked~.menu__btn ::before {
+			transform: rotate(0deg);
+			top: 0;
+		}
+
+		&:checked~.menu__btn ::after {
+			transform: rotate(90deg);
+			top: 0;
+		}
+
+		&:checked~.menu__box {
+			visibility: visible;
+			left: 0;
+		}
+	}
+
+	&__btn {
+		display: block;
+		position: fixed;
+		top: 12px;
+		left: 15px;
+
+		width: 30px;
+		height: 30px;
+
+		z-index: 2;
+		cursor: pointer;
+
+		&-icon,
+		&-icon::before,
+		&-icon::after {
+			margin: 9px 0;
+			display: block;
+			position: absolute;
+			width: 100%;
+			height: 2px;
+			background-color: $d;
+			transition-duration: .25s;
+		}
+
+		&-icon::before {
+			content: '';
+			top: -12px;
+			margin: 0;
+		}
+
+		&-icon::after {
+			content: '';
+			bottom: -12px;
+			margin: 0;
+		}
+	}
+
+	&__box {
+		display: block;
+		position: fixed;
+		visibility: visible;
+		z-index: 1;
+		margin: 0;
+		top: 0;
+		left: -100%;
+		width: 100%;
+		height: 100%;
+		padding-left: 0;
+		border-top: 47px solid $c;
+		background-color: $b;
+		transition-duration: .4s;
+	}
+
+	&__item {
+		color: $c;
+		display: block;
+		padding-left: 30px;
+		text-align: left;
+		width: 100%;
+		font-size: 30px;
+		font-family: 'Segoe UI light';
+		padding:  15px;
+		border-bottom: rgb(39, 39, 39) solid 1px;
+		&:hover{
+			background-color: $f;
+			color: $a;
+		}
+	}
 }
 
 .wrap {
-	margin: 0 auto;
+	text-align: center;
 }
 
 .catalogue-filtr {
-	display: inline;
 	font-size: 5.5vw;
+	display: inline;
+	text-align: center;
+	margin: 0 auto;
+	padding: 0;
 
 	&__item {
 		display: inline;
-		margin-right: 20px;
+		margin: 3%;
 	}
 
 	&__link {
@@ -24,15 +149,15 @@ html {
 		text-transform: uppercase;
 
 		&:hover {
-			color: $orange;
+			color: $c;
 		}
 
 		&--active {
-			color: $main;
+			color: $c;
 			font-weight: 900;
 
 			&:hover {
-				color: $main;
+				color: $d;
 			}
 		}
 	}
@@ -40,15 +165,18 @@ html {
 
 .product-grid {
 	font-size: 0;
+	text-align: left;
+	margin-top: 3%;
 
-	&__item {}
+	// &__item {}
 }
 
 .product-card {
 	width: 96%; //ширина картки товару
 	padding: 2%;
 	margin: 2%;
-	border: 1px solid rgb(238, 238, 238);
+	// border: 1px solid $d;
+	background-color: $b;
 	display: inline-block;
 
 	&__wrapper {
@@ -68,7 +196,7 @@ html {
 
 			&__cost {
 				display: block;
-				color: #d60c0c;
+				color: #aaaaaa;
 				font-size: 1em;
 				height: 12%;
 			}
@@ -124,7 +252,7 @@ html {
 		//продукти со скидкой
 		&--sale {
 			.product-info__cost {
-				color: $orange;
+				color: $c;
 			}
 
 			.product-info__sell {
@@ -135,51 +263,3 @@ html {
 
 
 }
-
-
-
-
-
-/* Стили для маленьких экранов (телефоны в альбомной ориентации,
-дисплей 576 пикселей и более) */
-@media (min-width: 576px) {
-	.product-card {
-		width: 46%; //ширина картки товару
-		padding: 2%;
-		margin: 2%;
-
-		&__info {
-			font-size: 5vw;
-		}
-	}
-}
-
-/* Стили для средних экранов (планшеты, дисплей 768 пикселей и более) */
-@media (min-width: 768px) {
-	.product-card {
-		width: 31.3333%; //ширина картки товару
-		padding: 2%;
-		margin: 1%;
-
-		&__info {
-			font-size: 3.33333333333333vw;
-		}
-	}
-}
-
-/* Стили для больших экранов (ПК, дисплей 992 пикселей и более) */
-@media (min-width: 992px) {
-	.product-card {
-		width: 24%; //ширина картки товару
-		padding: .5%;
-		margin: .5%;
-
-		&__info {
-			font-size: 2.2vw;
-		}
-	}
-}
-
-/* Стили для очень больших экранов (ПК с большим монитором,
-дисплей 1200 пикселей и более) */
-@media (min-width: 1200px) {}
