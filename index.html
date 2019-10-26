@@ -3,396 +3,175 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>MoGo</title>
-	<link rel="stylesheet" href="style/main.css">
-	<!-- <link
-    href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:400,700&display=swap&subset=cyrillic-ext"
-    rel="stylesheet"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/media_q.css">
+	<title>Document</title>
 </head>
 
-<body class="container">
+<body>
 
-	<!-- header -->
-	<header class="header">
-		<div class="header__wrap wrap">
-			<div class="header__logo">MoGo</div>
-			<nav class="header__nav">
-				<a class="nav__link nav__link--active" href="#">About</a>
-				<a class="nav__link" href="app/index.html">Service</a>
-				<a class="nav__link" href="#">Work</a>
-				<a class="nav__link" href="#">Blog</a>
-				<a class="nav__link" href="#">Contact</a>
-			</nav>
-			<div class="header__subtitle">
-				<h2 class="header__slogan">Creative Template</h2>
-				<h1 class="header__title">welcome <br> to mogo</h1>
-				<a class="header__btn" href="#">Learn More</a>
-			</div>
-			<div class="header__menu">
-				<div class="menu__item menu__item--active"><span class="menu__num">01</span> intro</div>
-				<div class="menu__item"><span class="menu__num">02</span> work</div>
-				<div class="menu__item"><span class="menu__num">03</span> about</div>
-				<div class="menu__item"><span class="menu__num">04</span> contacts</div>
-			</div>
-		</div>
-	</header>
-	<!-- end header -->
+	<div class="header-menu">
+		<div class="header-menu__nav-btn"></div>
+		<ul class="header-menu__box">
+			<li><a class="header-menu__item" href="#">Главная</a></li>
+			<li><a class="header-menu__item header-menu__item--active" href="#">Проекты</a></li>
+			<li><a class="header-menu__item" href="#">Блог</a></li>
+			<li><a class="header-menu__item" href="#">Контакты</a></li>
+		</ul>
+	</div>
 
-	<!-- about us -->
-	<section class="section">
-		<div class="wrap">
-			<div class="section__title-box">
-				<h4 class="section__subtitle">What we do</h4>
-				<h3 class="section__title">Story about us</h3>
-				<p class="section__lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-					incididunt
-					ut labore et dolore
-					magna aliqua. Ut enim ad minim<br> veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-					ex ea
-					commodo consequat.</p>
-			</div>
-			<div class="section__img-box">
-				<img class="section__image" src="images/about_bg.jpg" alt="">
-				<img class="section__image" src="images/about2.jpg" alt="">
-				<img class="section__image" src="images/about3.jpg" alt="">
-				<div class="section__image--upper">
-					<img src="" alt="">
-					<a href="#">
-						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32px"
-							height="24px">
-							<path fill-rule="evenodd" fill="rgb(255, 255, 255)"
-								d="M31.950,22.503 C31.950,22.504 31.950,22.505 31.950,22.505 C31.950,23.054 31.504,23.497 30.955,23.497 L23.543,23.497 C24.099,23.374 24.515,22.883 24.515,22.292 C24.515,22.291 24.514,22.291 24.514,22.290 L24.515,22.290 C24.515,22.290 24.515,17.786 21.214,16.148 C19.802,15.448 19.709,15.582 19.008,15.416 L19.028,13.466 C19.028,13.466 18.257,12.878 18.017,11.035 C17.535,11.175 17.376,10.471 17.347,10.023 C17.321,9.592 17.068,8.240 17.657,8.362 C17.536,7.460 17.450,6.647 17.492,6.215 C17.640,4.703 19.102,3.122 21.353,3.008 C24.002,3.122 25.051,4.702 25.198,6.214 C25.241,6.646 25.147,7.460 25.026,8.360 C25.615,8.240 25.359,9.588 25.330,10.021 C25.305,10.469 25.142,11.170 24.661,11.030 C24.420,12.873 23.649,13.456 23.649,13.456 L23.667,15.404 C23.667,15.404 24.155,15.682 26.213,16.531 C28.271,17.382 27.625,16.745 29.301,17.576 C31.950,18.890 31.950,22.503 31.950,22.503 L31.950,22.503 ZM17.023,15.840 C19.285,16.775 18.575,16.075 20.418,16.990 C23.330,18.433 23.330,22.405 23.330,22.405 L23.329,22.405 C23.329,22.405 23.329,22.406 23.329,22.408 C23.329,23.010 22.840,23.497 22.236,23.497 L1.093,23.497 C0.489,23.497 -0.000,23.010 -0.000,22.408 C-0.000,22.406 0.000,22.405 0.000,22.405 L-0.001,22.405 C-0.001,22.405 -0.001,18.433 2.911,16.988 C4.754,16.075 4.044,16.817 6.306,15.882 C8.568,14.949 9.104,14.622 9.104,14.622 L9.125,12.470 C9.125,12.470 8.278,11.824 8.015,9.800 C7.485,9.953 7.310,9.179 7.279,8.687 C7.250,8.212 6.972,6.727 7.618,6.862 C7.486,5.870 7.391,4.976 7.438,4.503 C7.600,2.839 9.207,1.103 11.682,0.975 C14.593,1.101 15.747,2.838 15.908,4.500 C15.955,4.975 15.852,5.869 15.719,6.859 C16.366,6.727 16.085,8.209 16.053,8.684 C16.025,9.177 15.846,9.947 15.317,9.794 C15.053,11.820 14.206,12.460 14.206,12.460 L14.225,14.602 C14.225,14.602 14.761,14.906 17.023,15.840 Z" />
-						</svg>
-						<p>super team</p>
-					</a>
-				</div>
-			</div>
+	<div class="menu">
+		<input type="checkbox" name="" id="menu__toogle">
+		<label class="menu__btn" for="menu__toogle">
+			<span class="menu__btn-icon"></span>
+		</label>
 
 
-		</div>
-	</section>
-	<!-- end about us -->
+		<ul class="menu__box">
+			<li><a class="menu__item" href="#">Главная</a></li>
+			<li><a class="menu__item" href="#">Проекты</a></li>
+			<li><a class="menu__item" href="#">Блог</a></li>
+			<li><a class="menu__item" href="#">Контакты</a></li>
+		</ul>
+	</div>
 
-	<!-- statistic -->
-	<section class="statistic">
-		<div class="wrap statistic__row">
-			<div class="statistic__item">
-				<div class="">
-					<h2 class="statistic__numb">42</h2>
-					<p>web design projects</p>
-				</div>
-			</div>
-			<div class="statistic__item">
-				<div class="">
-					<h2 class="statistic__numb">123</h2>
-					<p>happy client</p>
-				</div>
-			</div>
-			<div class="statistic__item">
-				<div class="">
-					<h2 class="statistic__numb">15</h2>
-					<p>award winner</p>
-				</div>
-			</div>
-			<div class="statistic__item">
-				<div class="">
-					<h2 class="statistic__numb">99</h2>
-					<p>cup of coffe</p>
-				</div>
-			</div>
-			<div class="statistic__item">
-				<div class="">
-					<h2 class="statistic__numb">24</h2>
-					<p class="statistic__desc">members</p>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- end statistic -->
+	<div class="wrap">
+		<ul class="catalogue-filtr">
+			<li class="catalogue-filtr__item"><span class="catalogue-filtr__link catalogue-filtr__link--active">Новые</span>
+			</li>
+			<li class="catalogue-filtr__item"><a class="catalogue-filtr__link" href="#">популярные</a></li>
+		</ul>
+	</div>
 
-	<section class="section">
-		<div class="wrap">
-			<div class="section__title-box">
-				<h4 class="section__subtitle">What we do</h4>
-				<h3 class="section__title">Story about us</h3>
-			</div>
-			<div class="service">
-				<div class="service__sub-box">
-					<div class="service__item">
-						<div class="service__img"><img src="/images/ALARM.svg" alt=""></div>
-						<div class="service__text">
-							<span class="service__title">PHOTOGRAPHY</span>
-							<span class="service__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-								eiusmod
-								tempor.</span>
-						</div>
+	<div class="wrap product-grid">
+		<div class="product-grid__item product-card">
+			<div class="product-card__wrapper">
+				<div class="product-card__info product-card__info">
+					<div class="product-info__img-box">
+						<img class="product-info__img" src="img/product/mogo.png" alt="product">
 					</div>
-					<div class="service__item">
-						<div class="service__img"><img src="/images/LINE GRAPH.svg" alt=""></div>
-						<div class="service__text">
-							<span class="service__title">WEB DESIGN</span>
-							<span class="service__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-								eiusmod
-								tempor.</span>
-						</div>
+					<a href="mogo/index.html" class="product-info__desc">Простой landing-page</a>
+					<p class="product-info__id">CSS/HTML</p>
+				</div>
+			</div>
+		</div>
+		<div class="product-grid__item product-card">
+			<div class="product-card__wrapper">
+				<div class="product-card__info product-card__info">
+					<div class="product-info__img-box">
+						<img class="product-info__img" src="img/product/1.jpg" alt="product">
 					</div>
-					<div class="service__item">
-						<div class="service__img"><img src="/images/COMPUTER _ OK.svg" alt=""></div>
-						<div class="service__text">
-							<span class="service__title">CREATIVITY</span>
-							<span class="service__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-								eiusmod
-								tempor.</span>
-						</div>
+					<a href="#" class="product-info__desc">Многостраничный магазин "Мегаплан"</a>
+					<p class="product-info__id">CSS/HTML/JavaScript</p>
+				</div>
+			</div>
+		</div>
+		<div class="product-grid__item product-card">
+			<div class="product-card__wrapper">
+				<div class="product-card__info product-card__info">
+					<div class="product-info__img-box">
+						<img class="product-info__img" src="img/product/2.jpg" alt="product">
 					</div>
+					<a href="#" class="product-info__desc">Сайт продажи недвижимости</a>
+					<p class="product-info__id">CSS/HTML/JavaScript</p>
 				</div>
-				<div class="service__sub-box">
-					<div class="service__item">
-						<div class="service__img"><img src="/images/BOOK 2.svg" alt=""></div>
-						<div class="service__text">
-							<span class="service__title">SEO</span>
-							<span class="service__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-								eiusmod
-								tempor.</span>
-						</div>
+			</div>
+		</div>
+		<div class="product-grid__item product-card">
+			<div class="product-card__wrapper">
+				<div class="product-card__info product-card__info">
+					<div class="product-info__img-box">
+						<img class="product-info__img" src="img/product/3.jpg" alt="product">
 					</div>
-					<div class="service__item">
-						<div class="service__img"><img src="/images/HOME.svg" alt=""></div>
-						<div class="service__text">
-							<span class="service__title">CSS/HTML</span>
-							<span class="service__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-								eiusmod
-								tempor.</span>
-						</div>
+					<a href="#" class="product-info__desc">Торговая площадка</a>
+					<p class="product-info__id">CSS/HTML/JavaScript/PHP/SQL</p>
+				</div>
+			</div>
+		</div>
+		<div class="product-grid__item product-card">
+			<div class="product-card__wrapper">
+				<div class="product-card__info product-card__info">
+					<div class="product-info__img-box">
+						<img class="product-info__img" src="img/product/4.jpg" alt="product">
 					</div>
-					<div class="service__item">
-						<div class="service__img"><img src="/images/IMAGE.svg" alt=""></div>
-						<div class="service__text">
-							<span class="service__title">DIGITAL</span>
-							<span class="service__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-								eiusmod
-								tempor.</span>
-						</div>
+					<a href="#" class="product-info__desc">Простой одностраничный лендинг</a>
+					<p class="product-info__id">CSS/HTML</p>
+				</div>
+			</div>
+		</div>
+		<div class="product-grid__item product-card">
+			<div class="product-card__wrapper">
+				<div class="product-card__info product-card__info">
+					<div class="product-info__img-box">
+						<img class="product-info__img" src="img/product/5.jpg" alt="product">
 					</div>
+					<a href="#" class="product-info__desc">Конструктор сайтов</a>
+					<p class="product-info__id">CSS/HTML/JavaScript</p>
 				</div>
 			</div>
 		</div>
-	</section>
-
-	<!-- device -->
-	<section class="device">
-		<div class="wrap device__wrap">
-			<div class="section__title-box">
-				<h4 class="section__subtitle device__subtitle">For all devices</h4>
-				<h3 class="section__title">Unique design</h3>
-			</div>
-			<img class="device__tablet" src="images/tablet.png" alt="">
-			<img class="device__phone" src="images/phone.png" alt="">
-		</div>
-	</section>
-
-	<section class="we-do">
-		<div class="wrap">
-			<div class="section__title-box">
-				<h4 class="section__subtitle device__subtitle">Service</h4>
-				<h3 class="section__title">What we do</h3>
-				<p class="section__lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-					incididunt
-					ut labore et dolore
-					magna aliqua. Ut enim ad minim<br> veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-					ex ea
-					commodo consequat.</p>
-				<div class="we-do__box">
-					<div class="we-do__image"><img src="images/we_do.jpg"></div>
-					<div class="we-do__list">
-						<div class="we-do__item">
-							<img src="images/PICTURE.svg" alt="">
-							<h6>PHOTOGRAPHY</h6><img class="arrow" src="images/ARROW_DOWN.svg" alt="">
-						</div>
-						<div class="we-do__text">
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-								ut labore et
-								dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-								nisi ut aliquip
-								ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-								cillum dolore eu
-								fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-								officia
-								deserunt mollit anim id est laborum</p>
-						</div>
-						<div class="we-do__item"><img src="images/EQUALIZER.svg" alt="">
-							<h6>CREATIVITY</h6><img class="arrow" src="images/ARROW_DOWN.svg" alt="">
-						</div>
-						<div class="we-do__item"><img src="images/BULLSEYE.svg" alt="">
-							<h6>WEB DESIGN</h6><img class="arrow" src="images/ARROW_DOWN.svg" alt="">
-						</div>
+		<div class="product-grid__item product-card">
+			<div class="product-card__wrapper">
+				<div class="product-card__info product-card__info">
+					<div class="product-info__img-box">
+						<img class="product-info__img" src="img/product/6.jpg" alt="product">
 					</div>
-				</div>
-	</section>
-
-	<section class="quotes">
-		<div class="quotes__wrap">
-			<div class="quotes__arrow"></div>
-			<div class="qoutes__text">
-				<div class="qoutes__conservation"></div>
-				<div class="qoutes__quote">
-					<blockquote>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-						incididunt ut
-						labore
-						et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</blockquote>
-					<p>Joe Doe</p>
+					<a href="#" class="product-info__desc">Поисковая система</a>
+					<p class="product-info__id">CSS/HTML/JavaScript/PHP/SQL</p>
 				</div>
 			</div>
-			<div class="quotes__arrow"></div>
 		</div>
-		</div>
-	</section>
-
-	<section class="section">
-		<div class="wrap">
-			<div class="section__title-box">
-				<h4 class="section__subtitle">Who we are</h4>
-				<h3 class="section__title">MEET OUR TEAM</h3>
-				<p class="section__lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-					incididunt
-					ut labore et dolore
-					magna aliqua. Ut enim ad minim<br> veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-					ex ea
-					commodo consequat.</p>
-			</div>
-			<div class="section__img-box we__title-box">
-				<img class="section__image" src="images/about_bg.jpg" alt="">
-				<img class="section__image" src="images/christopher.jpg" alt="">
-				<img class="section__image" src="images/michael.jpg" alt="">
-				<div class="section__image--upper we__image--upper">
-					<div class="we__links">
-						<a class="we__link1" href="#"></a>
-						<a class="we__link2" href="#"></a>
-						<a class="we__link3" href="#"></a>
-						<a class="we__link4" href="#"></a>
+		<div class="product-grid__item product-card">
+			<div class="product-card__wrapper">
+				<div class="product-card__info product-card__info">
+					<div class="product-info__img-box">
+						<img class="product-info__img" src="img/product/7.jpg" alt="product">
 					</div>
-				</div>
-			</div>
-			<div class="team">
-				<span class="team__name">Matthew Dix<p>Graphic Design</p></span>
-				<span class="team__name">Christopher Campbell<p>Branding/UX design</p></span>
-				<span class="team__name">Michael Fertig<p>Developer</p></span>
-			</div>
-
-
-		</div>
-	</section>
-
-	<section class="hipster">
-		<div class="wrap hipster__wrap">
-			<img class="hipster__img" src="images/hipster.png" alt="">
-		</div>
-	</section>
-
-	<section class="our-work">
-		<div class="section__title-box">
-			<h4 class="section__subtitle">What we do</h4>
-			<h3 class="section__title">some of our work</h3>
-			<p class="section__lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-				incididunt
-				ut labore et dolore
-				magna aliqua. Ut enim ad minim<br> veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-				ex ea
-				commodo consequat.</p>
-		</div>
-
-	</section>
-
-	<!-- colage -->
-	<section class="colage">
-		<div class="colage__colum">
-			<div class="colage__img"><img class="img__item" src="images/Layer 35.jpg" alt=""></div>
-			<div class="colage__img colage__img--up"><img class="img__item" src="images/Layer 33.jpg" alt=""></div>
-		</div>
-		<div class="colage__colum">
-			<div class="colage__img"><img class="img__item" src="images/Layer 32.jpg" alt=""></div>
-			<div class="colage__img colage__img--up"><img class="img__item" src="images/Layer 31.jpg" alt=""></div>
-
-		</div>
-		<div class="colage__colum">
-			<div class="colage__img"><img class="img__item" src="images/meduza.jpg" alt=""></div>
-			<!-- <div class="colage__img"><img class="img__item" src="images/Layer 26.jpg" alt=""></div> -->
-
-		</div>
-		<div class="colage__colum">
-			<div class="colage__img"><img class="img__item" src="images/Layer 29.jpg" alt=""></div>
-			<div class="colage__img colage__img--up"><img class="img__item" src="images/Layer 26.jpg" alt=""></div>
-
-		</div>
-	</section>
-
-	<section class="quotes johana">
-		<div class="quotes__wrap">
-			<div class="quotes__arrow"></div>
-			<div class="qoutes__text">
-				<div class="qoutes__conservation johana__avatar"></div>
-				<div class="qoutes__quote">
-					<blockquote>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-						incididunt ut
-						labore
-						et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</blockquote>
-					<p>Joshua Earle</p>
-				</div>
-			</div>
-			<div class="quotes__arrow"></div>
-		</div>
-		</div>
-	</section>
-
-	<section class="device people">
-		<div class="wrap device__wrap">
-			<div class="section__title-box">
-				<h4 class="section__subtitle device__subtitle">For all devices</h4>
-				<h3 class="section__title">Unique design</h3>
-			</div>
-
-		</div>
-	</section>
-
-	<section class="clients">
-		<div class="wrap clients__wrap">
-			<div class="clients__box">
-				<div class="clients__img"></div>
-				<div class="clients__text">
-					<h6 class="clients__name">Matthew Dix</h6>
-					<span class="clients__service">Graphic Design</span>
-					<span class="clients__desc">Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-						incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</span>
-				</div>
-			</div>
-			<div class="clients__box">
-				<div class="clients__img"></div>
-				<div class="clients__text">
-					<h6 class="clients__name">Jaelynn Castillo </h6>
-					<span class="clients__service">Graphic Design</span>
-					<span class="clients__desc">Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-						incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</span>
-				</div>
-			</div>
-			<div class="clients__box">
-				<div class="clients__img"></div>
-				<div class="clients__text">
-					<h6 class="clients__name">Nick Karvounis</h6>
-					<span class="clients__service">Graphic Design</span>
-					<span class="clients__desc">Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-						incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</span>
-				</div>
-			</div>
-			<div class="clients__box">
-				<div class="clients__img"></div>
-				<div class="clients__text">
-					<h6 class="clients__name">Mike Petrucci</h6>
-					<span class="clients__service">Graphic Design</span>
-					<span class="clients__desc">Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-						incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</span>
+					<a href="#" class="product-info__desc">Социальная сеть</a>
+					<p class="product-info__id">CSS/HTML</p>
 				</div>
 			</div>
 		</div>
-	</section>
+		<div class="product-grid__item product-card">
+			<div class="product-card__wrapper">
+				<div class="product-card__info product-card__info">
+					<div class="product-info__img-box">
+						<img class="product-info__img" src="img/product/6.jpg" alt="product">
+					</div>
+					<a href="#" class="product-info__desc">Энциклопедии и словари</a>
+					<p class="product-info__id">CSS/HTML/JavaScript</p>
+				</div>
+			</div>
+		</div>
+		<div class="product-grid__item product-card">
+			<div class="product-card__wrapper">
+				<div class="product-card__info product-card__info">
+					<div class="product-info__img-box">
+						<img class="product-info__img" src="img/product/2.jpg" alt="product">
+					</div>
+					<a href="#" class="product-info__desc">Интернет и телекоммуникации</a>
+					<p class="product-info__id">CSS/HTML</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
 
 </html>

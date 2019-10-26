@@ -1,0 +1,110 @@
+/* Стили для маленьких экранов (телефоны в альбомной ориентации,
+дисплей 576 пикселей и более) */
+@media (min-width: 576px) {
+  .menu {
+    &__box {
+      width: 50%;
+    }
+  }
+
+  .catalogue-filtr {
+    font-size: 4vw;
+  }
+
+  .product-card {
+    width: 46%; //ширина картки товару
+    // padding: 2%;
+    margin: 2%;
+
+    &__info {
+      font-size: 5vw;
+    }
+  }
+}
+
+/* Стили для средних экранов (планшеты, дисплей 768 пикселей и более) */
+@media (min-width: 768px) {
+
+  .menu {
+    &__box {
+      width: 30%;
+    }
+  }
+
+  .catalogue-filtr {
+    font-size: 2.8vw;
+  }
+
+  .product-card {
+    width: 31.3333%; //ширина картки товару
+    // padding: 2%;
+    margin: 1%;
+
+    &__info {
+      font-size: 3.33333333333333vw;
+    }
+  }
+}
+
+/* Стили для больших экранов (ПК, дисплей 992 пикселей и более) */
+@media (min-width: 992px) {
+  .header-menu {
+    
+    &__nav-btn {
+      display: none;
+    }
+
+    &__box {
+      padding-left: 50px;
+      display: block;
+    }
+
+    li{
+      display: inline;
+      margin: 0;
+    }
+
+    &__item {
+      color: #bdb9b5;
+      font-size: 20px;
+      font-weight: bold;
+      margin: 0 20px;
+      padding-bottom: 6px;
+      
+      &:hover{
+        // border-bottom: 2px solid #ff6766;
+        color: #ff6766;
+      }
+      &--active{
+        color: #ff6766;border-bottom: 2px solid #ff6766;
+      }
+    }
+  }
+
+
+  .menu {
+    display: none;
+  }
+
+  .catalogue-filtr {
+    font-size: 2vw;
+  }
+
+  .product-grid {
+    margin: 3% 10% 0 10%;
+  }
+
+  .product-card {
+    width: 24%; //ширина картки товару
+    // padding: .5%;
+    margin: .5%;
+
+    &__info {
+      font-size: 2vw;
+    }
+  }
+}
+
+/* Стили для очень больших экранов (ПК с большим монитором,
+дисплей 1200 пикселей и более) */
+@media (min-width: 1200px) {}
