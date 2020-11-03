@@ -99,7 +99,7 @@ body {}
       color: white;
       font-size: 25px;
       margin-left: 65px;
-      padding: 17px 0;
+      padding: 20px 0;
       transition: .5s;
 
       &:hover {
@@ -278,7 +278,7 @@ section {
   .product-grid {
     font-size: 0;
     text-align: left;
-    margin: 3% 20px 0 20px;
+    margin: 3% 10px 0 10px;
     display: flex;
     flex-wrap: wrap;
   }
@@ -293,7 +293,7 @@ section {
     &__wrapper {
       position: relative;
       width: 100%;
-      padding-bottom: 100%///висота картки
+      padding-bottom: 120%///висота картки
     }
 
     &__info {
@@ -305,7 +305,7 @@ section {
       .product-info {
         &__img-box {
           position: relative;
-          height: 55%;
+          height: 70%;
           width: 100%;
           border: solid 1px #e4e4e4a3;
           // background: rgba(0, 0, 0, 0.449);          
@@ -333,13 +333,13 @@ section {
           color:#00979d;
           font-size: 45%;
           line-height: 1.1;
-          height: 20%;
+          height: 12%;
           padding: 5px 2% 0
         }
 
         &__id {
           color: #189100;
-          font-size: 40%;
+          font-size: 50%;
           text-align: center;
           // height: 5%;
           // padding: 2% 15% 0 15%;
