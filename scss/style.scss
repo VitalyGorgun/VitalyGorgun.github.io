@@ -1,0 +1,359 @@
+$main: #008184;
+$second: #014e51;
+$activeText: #f1c40f;
+
+body {}
+
+
+.header {
+  height: 60px;
+  background-color: $main;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  width: 100%;
+
+  &__wrap {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #menu__toggle {
+    display: none;
+
+    &:checked {
+      &~.menu__btn>span {
+        transform: rotate(45deg);
+      }
+
+      &~.menu__btn>span::before {
+        top: 0;
+        transform: rotate(0);
+      }
+
+      &~.menu__btn>span::after {
+        top: 0;
+        transform: rotate(90deg);
+      }
+
+      &~.header__menu {
+        visibility: visible;
+        left: 0;
+      }
+    }
+  }
+
+  .menu__btn {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 10px;
+    left: 20px;
+    width: 30px;
+    height: 40px;
+
+    cursor: pointer;
+    z-index: 2;
+
+    >span,
+    >span::before,
+    >span::after {
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background-color: rgb(255, 255, 255);
+      transition-duration: .25s;
+    }
+
+    >span::before {
+      content: '';
+      top: -10px;
+    }
+
+    >span::after {
+      content: '';
+      top: 10px;
+    }
+  }
+
+  &__logo {
+    color: white;
+    font-size: 30px;
+    margin-left: 80px;
+    transition: .5s;
+
+    &:hover {
+      color: $activeText;
+    }
+
+    &-light {
+      color: $activeText;
+    }
+
+    &-mobile {
+      color: white;
+      font-size: 30px;
+      margin-left: 80px;
+      padding: 17px 0;
+      transition: .5s;
+
+      &:hover {
+        color: $activeText;
+      }
+    }
+  }
+
+  &__search {
+    .search {
+
+      margin: 10px 40px;
+      display: flex;
+      width: 100%x;
+      height: 40px;
+      min-height: 20px;
+      outline: none;
+    }
+
+    input[type="search"] {
+      height: 39px;
+      position: relative;
+      border: none;
+      outline: none;
+      width: 100%;
+      background-color: $main;
+      padding-left: 20px;
+      color: $activeText;
+
+      &::-webkit-search-cancel-button {
+        display: none;
+      }
+
+    }
+
+    button {
+      outline: none;
+      right: 0px;
+      top: 5px;
+      width: 60px;
+      height: 39px;
+      border: none;
+      background-color: $activeText;
+
+      svg {
+        margin-top: 5px;
+        height: 20px;
+        width: 20px;
+        fill: rgb(50, 50, 50);
+      }
+
+      &:active {
+        background-color: #b1900d;
+      }
+    }
+
+  }
+
+  &__menu {
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: -100%;
+    width: 85%;
+    height: 1000px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: $second;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+    transition-duration: .25s;
+
+    &-item {
+      display: block;
+      color: white;
+      font-size: 20px;
+      font-weight: 100;
+      padding: 10px 10px 10px 20px;
+      margin: 0 40px;
+      transition: .5s;
+      border-bottom: 1px solid #015d5ec2;
+      //  border-top: 1px solid #015d5ec2;
+
+      &:hover {
+        background-color: $main;
+        color: $activeText;
+      }
+    }
+
+    .tab {
+      .input {
+        display: none;
+      }
+
+      &-title {
+        display: block;
+        cursor: pointer;
+
+        &::after {
+          content: '+';
+          float: right;
+        }
+      }
+
+      &-content {
+        display: none;
+        padding: 0;
+        // list-style: decimal;
+      }
+
+      :checked+.tab-title {
+        padding-bottom: 10px;
+      }
+
+
+      :checked+.tab-title::after {
+        content: '−';
+        /* Выводим минус */
+      }
+
+      :checked~.tab-content {
+        display: block;
+        /* Показываем содержимое */
+      }
+
+      &__link {
+        width: 70%;
+        display: block;
+        padding: 10px;
+        color: white;
+        margin-left: 80px;
+
+        &:hover {
+          color: $activeText;
+          background-color: $main;
+        }
+      }
+    }
+  }
+
+  &__cart {
+    padding: 10px 0 10px 10px;
+
+    svg {
+      height: 30px;
+      width: 30px;
+      fill: white;
+
+      &:hover {
+        fill: $activeText;
+        transition: .5s;
+      }
+    }
+
+    &-count {
+      color: white;
+      position: relative;
+      left: -20px;
+      background-color: red;
+      padding: 3px 9px;
+      border-radius: 25px;
+      font-size: 10px;
+      z-index: 0;
+    }
+  }
+}
+
+
+section {
+  .product-grid {
+    font-size: 0;
+    text-align: left;
+    margin: 3% 10px 0 10px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .product-card {
+    width: 48%;
+    margin: 1%;
+    border: 1px solid #e4e4e4;
+    background-color: #f9fff8;
+    display: inline-block;
+
+    &__wrapper {
+      position: relative;
+      width: 100%;
+      padding-bottom: 150%///висота картки
+    }
+
+    &__info {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      font-size: 10vw;
+
+      .product-info {
+        &__img-box {
+          position: relative;
+          height: 50%;
+          width: 100%
+        }
+
+        &__img {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+          margin: 0 auto;
+          max-width: 100%;
+          height: 100%;
+          width: 100%;
+          -o-object-fit: cover;
+          object-fit: cover;
+          display: block
+        }
+
+        &__desc {
+          display: block;
+          text-align: center;
+          color: #000000;
+          font-size: 35%;
+          line-height: 1.1;
+          height: 25%;
+          padding: 18px 2% 0
+        }
+
+        &__id {
+          color: #189100;
+          font-size: 40%;
+          height: 5%;
+          padding: 0 5%
+        }
+        &__buy-btn{
+          color: #fff; /* цвет текста */
+          font-size: 25%;
+          text-decoration: none; /* убирать подчёркивание у ссылок */
+          user-select: none;
+          background: $main;
+          padding: .7em 1.5em;
+          outline: none; /* убирать контур в Mozilla */
+          border: none;
+          margin: 0 10% 5%;
+          width: 80%;
+          &:hover{
+            background-color: $second;
+          }
+          &:active{
+            background-color: $second;
+          }
+        }
+      }
+    }
+  }
+}

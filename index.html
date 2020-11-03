@@ -4,174 +4,116 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link rel="stylesheet" href="css/fonts.css">
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/styles.css">
-	<link rel="stylesheet" href="css/media_q.css">
 	<title>Document</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/style.css">
+	<!-- <link rel="stylesheet" href="css/media_q1.css"> -->
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> -->
+
 </head>
 
 <body>
-
-	<div class="header-menu">
-		<div class="header-menu__nav-btn"></div>
-		<ul class="header-menu__box">
-			<li><a class="header-menu__item" href="#">Главная</a></li>
-			<li><a class="header-menu__item header-menu__item--active" href="#">Проекты</a></li>
-			<li><a class="header-menu__item" href="#">Блог</a></li>
-			<li><a class="header-menu__item" href="#">Контакты</a></li>
-		</ul>
-	</div>
-
-	<div class="menu">
-		<input type="checkbox" name="" id="menu__toogle">
-		<label class="menu__btn" for="menu__toogle">
-			<span class="menu__btn-icon"></span>
-		</label>
-
-
-		<ul class="menu__box">
-			<li><a class="menu__item" href="#">Главная</a></li>
-			<li><a class="menu__item" href="#">Проекты</a></li>
-			<li><a class="menu__item" href="#">Блог</a></li>
-			<li><a class="menu__item" href="#">Контакты</a></li>
-		</ul>
-	</div>
-
-	<div class="wrap">
-		<ul class="catalogue-filtr">
-			<li class="catalogue-filtr__item"><span class="catalogue-filtr__link catalogue-filtr__link--active">Новые</span>
-			</li>
-			<li class="catalogue-filtr__item"><a class="catalogue-filtr__link" href="#">популярные</a></li>
-		</ul>
-	</div>
-
-	<div class="wrap product-grid">
-		<div class="product-grid__item product-card">
-			<div class="product-card__wrapper">
-				<div class="product-card__info product-card__info">
-					<div class="product-info__img-box">
-						<img class="product-info__img" src="img/product/mogo.png" alt="product">
+	<header class="header">
+		<div class="header__wrap">
+			<input id="menu__toggle" type="checkbox" />
+			<label class="menu__btn" for="menu__toggle">
+				<span></span>
+			</label>
+			<a href="#" class="header__logo">Arduino<span class="header__logo-light">DIY</span></a>
+			<ul class="header__menu">
+				<a href="#" class="header__logo-mobile">Arduino<span class="header__logo-light">DIY</span></a>
+				<li class="header__search">
+					<div class="search">
+						<input type="search" name="q">
+						<!-- <input type="submit" value="Поиск"> -->
+						<button>
+							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+								id="Capa_1" viewBox="0 0 511.999 511.999"
+								style="enable-background:new 0 0 511.999 511.999;" xml:space="preserve">
+								<path
+									d="M508.874,478.708L360.142,329.976c28.21-34.827,45.191-79.103,45.191-127.309c0-111.75-90.917-202.667-202.667-202.667    S0,90.917,0,202.667s90.917,202.667,202.667,202.667c48.206,0,92.482-16.982,127.309-45.191l148.732,148.732    c4.167,4.165,10.919,4.165,15.086,0l15.081-15.082C513.04,489.627,513.04,482.873,508.874,478.708z M202.667,362.667    c-88.229,0-160-71.771-160-160s71.771-160,160-160s160,71.771,160,160S290.896,362.667,202.667,362.667z" />
+							</svg>
+						</button>
 					</div>
-					<a href="mogo/index.html" class="product-info__desc">Простой landing-page</a>
-					<p class="product-info__id">CSS/HTML</p>
+				</li>
+				<li><a class="header__menu-item" href="#">Головна</a></li>
+				<li><a class="header__menu-item" href="#">Про нас</a></li>
+				<li class="tab">
+					<input class="input" type="checkbox" id="tab1">
+					<label for="tab1" class="tab-title header__menu-item">Каталог</label>
+					<ul class="tab-content">
+						<li><a class="tab__link" href="#">&#149; Плати</a></li>
+						<li><a class="tab__link" href="#">&#149; Модулі</a></li>
+						<input class="input" type="submit" value="Submit">
+					</ul>
+				</li>
+				<li><a class="header__menu-item" href="#">Відгуки</a></li>
+				<li><a class="header__menu-item" href="#">Контакти</a></li>
+				<li><a class="header__menu-item" href="#">Блог</a></li>
+			</ul>
+			<a href="#" class="header__cart"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -31 512.00033 512">
+					<path
+						d="m166 300.003906h271.003906c6.710938 0 12.597656-4.4375 14.414063-10.882812l60.003906-210.003906c1.289063-4.527344.40625-9.390626-2.433594-13.152344-2.84375-3.75-7.265625-5.964844-11.984375-5.964844h-365.632812l-10.722656-48.25c-1.523438-6.871094-7.617188-11.75-14.648438-11.75h-91c-8.289062 0-15 6.710938-15 15 0 8.292969 6.710938 15 15 15h78.960938l54.167968 243.75c-15.9375 6.929688-27.128906 22.792969-27.128906 41.253906 0 24.8125 20.1875 45 45 45h271.003906c8.292969 0 15-6.707031 15-15 0-8.289062-6.707031-15-15-15h-271.003906c-8.261719 0-15-6.722656-15-15s6.738281-15 15-15zm0 0" />
+					<path
+						d="m151 405.003906c0 24.816406 20.1875 45 45.003906 45 24.8125 0 45-20.183594 45-45 0-24.8125-20.1875-45-45-45-24.816406 0-45.003906 20.1875-45.003906 45zm0 0" />
+					<path
+						d="m362.003906 405.003906c0 24.816406 20.1875 45 45 45 24.816406 0 45-20.183594 45-45 0-24.8125-20.183594-45-45-45-24.8125 0-45 20.1875-45 45zm0 0" />
+				</svg>
+				<span class="header__cart-count">12</span>
+			</a>
+		</div>
+
+	</header>
+
+	<main>
+		<aside>
+
+		</aside>
+
+		<section>
+			<div class="wrap product-grid">
+				<div class="product-card">
+					<div class="product-card__wrapper">
+						<div class="product-card__info">
+							<div class="product-info__img-box">
+								<img class="product-info__img" src="img/uno.jpg" alt="product">
+							</div>
+							<a href="mogo/index.html" class="product-info__desc">Arduino UNO rev.3</a>
+							<p class="product-info__id">200₴</p>
+							<button class="product-info__buy-btn">Добавить в корзину</button>
+						</div>
+					</div>
+				</div>
+				<div class="product-card">
+					<div class="product-card__wrapper">
+						<div class="product-card__info">
+							<div class="product-info__img-box">
+								<img class="product-info__img" src="img/nano.jpg" alt="product">
+							</div>
+							<a href="#" class="product-info__desc">Arduino nano</a>
+							<p class="product-info__id">151₴</p>
+							<button class="product-info__buy-btn">Добавить в корзину</button>
+						</div>
+					</div>
+				</div>
+				<div class="product-card">
+					<div class="product-card__wrapper">
+						<div class="product-card__info product-card__info">
+							<div class="product-info__img-box">
+								<img class="product-info__img" src="img/leonardo.jpg" alt="product">
+							</div>
+							<a href="#" class="product-info__desc">
+								Соединительные провода 10см Дюпон <br>Папа-Мама — 40шт
+								</a>
+							<p class="product-info__id">325₴</p>
+							<button class="product-info__buy-btn">Добавить в корзину</button>
+						</div>
+					</div>
 				</div>
 			</div>
-		</div>
-		<div class="product-grid__item product-card">
-			<div class="product-card__wrapper">
-				<div class="product-card__info product-card__info">
-					<div class="product-info__img-box">
-						<img class="product-info__img" src="img/product/appkit.png" alt="product">
-					</div>
-					<a href="appkit/index.html" class="product-info__desc">Адаптивный сайт "AppKit"</a>
-					<p class="product-info__id">CSS/HTML</p>
-				</div>
-			</div>
-		</div>
-		<div class="product-grid__item product-card">
-			<div class="product-card__wrapper">
-				<div class="product-card__info product-card__info">
-					<div class="product-info__img-box">
-						<img class="product-info__img" src="img/product/2.jpg" alt="product">
-					</div>
-					<a href="candy_shop/index.html" class="product-info__desc">Candy shop</a>
-					<p class="product-info__id">CSS/HTML/JavaScript</p>
-				</div>
-			</div>
-		</div>
-		<div class="product-grid__item product-card">
-			<div class="product-card__wrapper">
-				<div class="product-card__info product-card__info">
-					<div class="product-info__img-box">
-						<img class="product-info__img" src="img/product/3.jpg" alt="product">
-					</div>
-					<a href="electro/index.html" class="product-info__desc">Торговая площадка</a>
-					<p class="product-info__id">CSS/HTML/JavaScript/PHP/SQL</p>
-				</div>
-			</div>
-		</div>
-		<div class="product-grid__item product-card">
-			<div class="product-card__wrapper">
-				<div class="product-card__info product-card__info">
-					<div class="product-info__img-box">
-						<img class="product-info__img" src="img/product/4.jpg" alt="product">
-					</div>
-					<a href="#" class="product-info__desc">Простой одностраничный лендинг</a>
-					<p class="product-info__id">CSS/HTML</p>
-				</div>
-			</div>
-		</div>
-		<div class="product-grid__item product-card">
-			<div class="product-card__wrapper">
-				<div class="product-card__info product-card__info">
-					<div class="product-info__img-box">
-						<img class="product-info__img" src="img/product/5.jpg" alt="product">
-					</div>
-					<a href="#" class="product-info__desc">Конструктор сайтов</a>
-					<p class="product-info__id">CSS/HTML/JavaScript</p>
-				</div>
-			</div>
-		</div>
-		<div class="product-grid__item product-card">
-			<div class="product-card__wrapper">
-				<div class="product-card__info product-card__info">
-					<div class="product-info__img-box">
-						<img class="product-info__img" src="img/product/6.jpg" alt="product">
-					</div>
-					<a href="#" class="product-info__desc">Поисковая система</a>
-					<p class="product-info__id">CSS/HTML/JavaScript/PHP/SQL</p>
-				</div>
-			</div>
-		</div>
-		<div class="product-grid__item product-card">
-			<div class="product-card__wrapper">
-				<div class="product-card__info product-card__info">
-					<div class="product-info__img-box">
-						<img class="product-info__img" src="img/product/7.jpg" alt="product">
-					</div>
-					<a href="#" class="product-info__desc">Социальная сеть</a>
-					<p class="product-info__id">CSS/HTML</p>
-				</div>
-			</div>
-		</div>
-		<div class="product-grid__item product-card">
-			<div class="product-card__wrapper">
-				<div class="product-card__info product-card__info">
-					<div class="product-info__img-box">
-						<img class="product-info__img" src="img/product/6.jpg" alt="product">
-					</div>
-					<a href="#" class="product-info__desc">Энциклопедии и словари</a>
-					<p class="product-info__id">CSS/HTML/JavaScript</p>
-				</div>
-			</div>
-		</div>
-		<div class="product-grid__item product-card">
-			<div class="product-card__wrapper">
-				<div class="product-card__info product-card__info">
-					<div class="product-info__img-box">
-						<img class="product-info__img" src="img/product/2.jpg" alt="product">
-					</div>
-					<a href="#" class="product-info__desc">Интернет и телекоммуникации</a>
-					<p class="product-info__id">CSS/HTML</p>
-				</div>
-			</div>
-		</div>
-	</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
+		</section>
+	</main>
 </body>
 
 </html>

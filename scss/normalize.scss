@@ -1,0 +1,28 @@
+*, *::after, *,::before{
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-family: 'Trueno', Helvetica, sans-serif;
+    line-height: .9;
+  }
+  
+  html,
+  html body,
+  html h1,
+  html h2,
+  html h3,
+  html h4,
+  html h5,
+  html h6,
+  html p {
+    margin: 0
+  }
+  
+  ul{
+    list-style: none;
+  }
+  
+  html a {
+    text-decoration: none
+  }
