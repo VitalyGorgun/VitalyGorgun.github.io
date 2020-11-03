@@ -175,7 +175,7 @@ body {}
 
     &-item {
       display: block;
-      color: white;
+      color: white !important;
       font-size: 20px;
       font-weight: 100;
       padding: 10px 10px 10px 20px;
@@ -231,7 +231,7 @@ body {}
         display: block;
         padding: 10px;
         color: white;
-        margin-left: 80px;
+        margin-left: 30px;
 
         &:hover {
           color: $activeText;
@@ -243,6 +243,8 @@ body {}
 
   &__cart {
     padding: 10px 0 10px 10px;
+    position: relative;
+    right: -15px;
 
     svg {
       height: 30px;
@@ -288,7 +290,7 @@ section {
     &__wrapper {
       position: relative;
       width: 100%;
-      padding-bottom: 120%///висота картки
+      padding-bottom: 100%///висота картки
     }
 
     &__info {
@@ -300,7 +302,7 @@ section {
       .product-info {
         &__img-box {
           position: relative;
-          height: 50%;
+          height: 55%;
           width: 100%
         }
 
@@ -325,7 +327,7 @@ section {
           color: #000000;
           font-size: 55%;
           line-height: 1.1;
-          height: 25%;
+          height: 20%;
           padding: 5px 2% 0
         }
 
@@ -333,7 +335,7 @@ section {
           color: #189100;
           font-size: 65%;
           height: 5%;
-          padding: 0 5%
+          padding: 2% 15% 0 15%;
         }
         &__buy-btn{
           color: #fff; /* цвет текста */
@@ -344,8 +346,8 @@ section {
           padding: .7em 1.5em;
           outline: none; /* убирать контур в Mozilla */
           border: none;
-          margin: 5% 10% 0 10%;
-          width: 80%;
+          margin: 5% 15% 0 15%;
+          width: 70%;
           &:hover{
             background-color: $second;
           }
