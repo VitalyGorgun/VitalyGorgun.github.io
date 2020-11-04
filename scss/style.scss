@@ -248,90 +248,64 @@ body {
     }
   }
 
-  #outer-wrap{
+  .header__links {
     overflow: auto;
-    height: 80vh;
-    .mainNav {
-      background: $second;
-      margin: 10px;
-		}
+    height: 75vh;
+    background: $second;
+    margin: 10px;
 
-		/* First Level */
-		.mainNav ul {
-      z-index: 30;
-			margin: 0;
-			padding: 0;
-			list-style: none;
-			border-bottom: 1px solid rgba(230, 230, 230, 0.333)
-		}
+    ul {
+      margin: 0;
+      padding: 0;
+    }
 
-		.mainNav ul li {
-			border-top: 1px solid rgba(224, 224, 224, 0.306);
-		}
+    ul li {
+      border-top: 1px solid rgba(224, 224, 224, 0.306);
+    }
 
-		.mainNav ul li a {
-			color: #FFFFFF;
-			display: block;
-			font-size: 1.1em;
-			line-height: normal;
-			padding: 12px 20px;
-			text-decoration: none;
-		}
+    ul li a {
+      color: #FFFFFF;
+      display: block;
+      font-size: 1.1em;
+      line-height: normal;
+      padding: 12px 20px;
+      text-decoration: none;
+    }
 
-		.mainNav ul li a:hover {
+    ul li a:hover {
       background: $main;
       color: #f39c13;
-			text-decoration: none;
-		}
+      text-decoration: none;
+    }
 
-		/* Second Level */
-		.mainNav ul ul {
-			border-bottom: none
-		}
+    ul ul {
+      border-bottom: none
+    }
 
-		.mainNav ul ul li {
-			border-top: 1px solid rgba(160, 160, 160, 0.075);
-			background: $second;
-		}
+    ul ul li {
+      border-top: 1px solid rgba(160, 160, 160, 0.075);
+      background: $second;
+    }
 
-		.mainNav ul ul li a {
-			color: #FFFFFF;
-			display: block;
-			font-size: 1em;
-			line-height: normal;
-			padding: 0.5em 1em 0.5em 2.5em;
-		}
+    ul ul li a {
+      color: #FFFFFF;
+      display: block;
+      font-size: 1em;
+      line-height: normal;
+      padding: 0.5em 1em 0.5em 2.5em;
+    }
 
-		.mainNav ul ul li a:hover {
-			background: $main;
-		}
-
-		/* Third Level */
-		.mainNav ul ul ul {
-			border-top: 1px solid #222;
-		}
-
-		.mainNav ul ul ul li {
-			border: none;
-		}
-
-		.mainNav ul ul ul li a {
-			padding-left: 3.5em;
-			padding-top: 0.25em;
-			padding-bottom: 0.25em;
-		}
-
-		/* Accordion Button */
-		ul li.has-subnav .accordion-btn {
-			color: #fff;
-			background: rgba(255, 255, 255, 0.15);
+    ul li.has-subnav .accordion-btn {
+      color: #fff;
+      background: rgba(255, 255, 255, 0.15);
       font-size: 16px;
-      &:hover{
+
+      &:hover {
         color: #f39c13;
       }
-		}
-
+    }
   }
+
 
   &__cart {
     padding: 10px 0 10px 10px;
@@ -380,31 +354,32 @@ main {
       margin: 3% 15px 0 15px;
       display: flex;
       flex-wrap: wrap;
+
       .product-card {
         width: 98%;
         margin: 10px 1%;
         display: inline-block;
-  
+
         &__wrapper {
           position: relative;
           width: 100%;
           padding-bottom: 120% ///висота картки
         }
-  
+
         &__info {
           position: absolute;
           width: 100%;
           height: 100%;
           font-size: 10vw;
-  
+
           .product-info {
             &__img-box {
               position: relative;
               height: 70%;
               width: 100%;
-              border: solid 1px #e4e4e44e;       
+              border: solid 1px #e4e4e44e;
             }
-  
+
             &__img {
               position: absolute;
               top: 50%;
@@ -418,9 +393,9 @@ main {
               -o-object-fit: cover;
               object-fit: cover;
               display: block;
-  
+
             }
-  
+
             &__desc {
               display: block;
               text-align: center;
@@ -430,13 +405,13 @@ main {
               height: 12%;
               padding: 5px 2% 0
             }
-  
+
             &__id {
               color: #189100;
               font-size: 50%;
               text-align: center;
             }
-  
+
             &__buy-btn {
               color: #fff;
               font-family: 'Roboto', sans-serif;
@@ -449,11 +424,11 @@ main {
               border: none;
               margin: 2% 20% 0 20%;
               width: 60%;
-  
+
               &:hover {
                 background-color: $activeText;
               }
-  
+
               &:active {
                 background-color: $activeText;
               }
@@ -466,5 +441,3 @@ main {
 
   }
 }
-
-
