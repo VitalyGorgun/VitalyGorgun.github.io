@@ -250,7 +250,7 @@ body {
 
   .header__links {
     overflow: auto;
-    height: 75vh;
+    height: 70vh;
     background: $second;
     margin: 10px;
 
@@ -260,7 +260,7 @@ body {
     }
 
     ul li {
-      border-top: 1px solid rgba(224, 224, 224, 0.306);
+      border-top: 1px solid rgba(0, 96, 98, 0.088);
     }
 
     ul li a {
@@ -283,7 +283,7 @@ body {
     }
 
     ul ul li {
-      border-top: 1px solid rgba(160, 160, 160, 0.075);
+      border-top: 1px solid rgba(0, 96, 98, 0.088);
       background: $second;
     }
 
