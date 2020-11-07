@@ -275,10 +275,9 @@ body {
     &-open {
       display: block;
       background-color: rgb(235, 235, 235);
-      border: 1px solid rgb(111, 111, 111);
-      box-shadow: black 5px;
+      border: 1px solid rgb(189, 189, 189);
+      // box-shadow: black 5px;
       border-top: none;
-      width: 400px;
       position: absolute;
       right: 0;
       top: 60px;
@@ -290,7 +289,7 @@ body {
       padding: 0;
       margin: 0;
       overflow: auto;
-      max-height: 400px;
+      max-height: 65vh;
     }
 
     &-item {
