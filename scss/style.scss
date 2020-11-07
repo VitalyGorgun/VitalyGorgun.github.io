@@ -275,7 +275,7 @@ body {
     &-open {
       display: block;
       background-color: rgb(235, 235, 235);
-      border: 1px solid rgb(189, 189, 189);
+      border: 3px solid $main;
       border-top: none;
       position: absolute;
       right: 0;
@@ -425,19 +425,18 @@ main {
 
       &_desc {
         color: grey;
-        font-size: 14px;
+        font-size: 12px;
       }
 
       &_select {
         padding: 0 5px;
         outline: none;
         height: 35px;
-        // width: 140px;
         border: none;
         border-radius: 0%;
         background-color: #e0e0e0;
         color: rgb(59, 59, 59);
-        font-size: 14px;
+        font-size: 12px;
 
         &:checked {
           background-color: #d1d1d1;
@@ -446,7 +445,7 @@ main {
 
       .section__item_counter {
         color: grey;
-        font-size: 14px;
+        font-size: 12px;
       }
     }
 
