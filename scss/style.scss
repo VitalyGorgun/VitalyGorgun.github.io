@@ -396,7 +396,7 @@ main {
   .section {
     &__title {
       display: block;
-      font-size: 20px;
+      font-size: 16px;
       margin: 0 25px;
       color: #4e5b61c2;
       font-weight: 100;
@@ -431,7 +431,7 @@ main {
       &_select {
         padding: 0 5px;
         outline: none;
-        height: 35px;
+        height: 25px;
         border: none;
         border-radius: 0%;
         background-color: #e0e0e0;
@@ -481,7 +481,7 @@ main {
               position: relative;
               height: 60%;
               width: 100%;
-              border: solid 1px #e4e4e44e;
+              // border: solid 1px #e4e4e44e;
             }
 
             &__img {
